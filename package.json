@@ -34,6 +34,9 @@
         "type": "git",
         "url": "git+https://github.com/xIKRATOSx/Ikratos-MD-v1.git"
     },
+    "engines": {
+        "node": ">=20.18.1"
+    }
     "bugs": {
         "url": "https://github.com/xIKRATOSx/Ikratos-MD-v1/issues"
     },
