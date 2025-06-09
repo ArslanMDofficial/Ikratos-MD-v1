@@ -24,14 +24,16 @@ import readline from 'readline'
 import { format } from 'util'
 import pino from 'pino'
 import ws from 'ws'
-import {
-    useMultiFileAuthState,
-    DisconnectReason,
-    fetchLatestBaileysVersion, 
-    makeInMemoryStore, 
-    makeCacheableSignalKeyStore, 
-    PHONENUMBER_MCC
-    } from '@adiwajshing/baileys'
+import baileys from '@adiwajshing/baileys'
+
+const {
+  useMultiFileAuthState,
+  DisconnectReason,
+  fetchLatestBaileysVersion,
+  makeInMemoryStore,
+  makeCacheableSignalKeyStore,
+  PHONENUMBER_MCC
+} = baileys
 import { Low, JSONFile } from 'lowdb'
 import { makeWASocket, protoType, serialize } from './lib/simple.js'
 import {
